@@ -15,7 +15,7 @@ export default function CollectPayments() {
 
   const fetchRequests = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/requests");
+      const res = await axios.get("https://cocotask.onrender.com/api/requests");
       setRequests(res.data);
     } catch (err) {
       console.error(err);
