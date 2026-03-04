@@ -14,8 +14,8 @@ export default function RequestsTable({ requests }) {
 
         <tbody>
           {requests.map((r) => (
-            <tr key={r.id} className="border-t">
-              <td className="p-3 text-blue-900 font-semibold">{r.id}</td>
+            <tr key={r.reference} className="border-t">
+              <td className="p-3 text-blue-900 font-semibold">{r.reference}</td>
 
               <td>
                 {r.name}
